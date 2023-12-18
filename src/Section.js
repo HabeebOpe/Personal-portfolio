@@ -5,7 +5,7 @@ import Project from "./Project.js"
 import Advantage from "./Advantage.js"
 import Contact from "./Contact.js"
 
-const Section = (props) => {
+const Section = () => {
   return (
     <div>
       <Home />

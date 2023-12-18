@@ -196,7 +196,7 @@ body {
   }
   .name-intro div h1 {
     font-family: 'Mina', sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
   }
 }
@@ -500,6 +500,7 @@ p {
 
 .connect2 h3 {
   font-weight: 300;
+  color: var(--text-cl);
 }
 
 .connect2 p {
@@ -546,102 +547,101 @@ p {
   }
 }
 
-/*******  NAVIGATION AREA AND NAV BUTTON.  *******/
-.navigation {
-  position: fixed;
-  height: 100%;
-  width: 100px;
-  top: 0;
-  right: 0;
-}
-
-.nav-bar {
-  height: 100%;
-  overflow: scroll;
-}
-
-.nav-bar .nav-content {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-
-.nav-bar .nav-content ul {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+/*******  FORM.  ******/
+.form-section{
+  height: 100vh;
+  display:  flex;
+  align-items:  center;
   justify-content: center;
-  border-radius: 15px 0 0 15px;
-  height: 0;
-  width: 100%;
-  background-color: var(--nex-cl);
-  overflow: scroll;
-  transition: 0.2s ease;
-  padding: 0;
+  background-color:  var(--primary-cl);
+  position: relative;
 }
-
-/*******Nav click event *******/
-body.open-nav .nav-bar .nav-content ul {
-  height: auto;
+.form-section form {
+  max-width: 400px;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: var(--text-cl);
 }
-
-.nav-content ul li {
-  width: 100%;
-  border-right: 2px solid var(--primary-cl);
-  transition: 0.2s ease;
-}
-
-.nav-content ul li a {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px 10px;
-  color: var(--primary-cl);
-}
-
-.nav-content ul li:hover a {
-  background-color: var(--primary-cl);
-  color: var(--text-dcl);
-}
-
-.nav-content ul li a p {
-  font-size: 13px;
-}
-
-.nav-content ul li a span {
-  font-size: 18px;
-}
-
-.navigation .nav-bar .nav-btn {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background-color: var(--primary-cl);
+.form-section form p{
   color: #000;
-  transition: 0.5s ease;
+}
+.form-section form .project-input-div {
+  padding-top: 10px;
 }
 
-body.open-nav .navigation .nav-bar .nav-btn {
-  transform: scale(0);
+.form-section form .project-input-div input {
+  width: 100%;
+  height: 50px;
+  padding: 12px;
+  font-size: 17px;
+  border: 1px solid #DFDFDF;
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 10px 0;
+  transition: 0.3s ease;
 }
 
-@media(min-width: 600px) {
-  .nav-bar .nav-content ul {
-    height: auto;
-  }
+.form-section form .project-input-div input:focus {
+  border: 2px solid darkorange;
+}
 
-  .navigation .nav-bar .nav-btn {
-    display: none;
-  }
-} 
+.form-section form .project-input-div input:first-child{
+  font-weight: bold;
+}
+
+.form-section form button {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: lighter;
+  background-color: darkorange;
+  margin-top: 15px;
+  border-bottom: 3px solid #000;
+  transition: 0.3s ease;
+}
+
+.form-section form button:hover {
+  background-color: #FFB577;
+  border: none;
+}
+
+.form-section form textarea {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #DFDFDF;
+  border-radius: 5px;
+  font-size: 17px;
+  max-height: 350px;
+  color: #000;
+  background-color: #fff;
+  transition: 0.3s ease;
+}
+
+.form-section textarea:focus {
+  border: 2px solid darkorange;
+}
+
+.back-home{
+  position:  absolute;
+  top: 0;
+  left:  0;
+  width:  80px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content:  center;
+  transition: 0.3s ease;
+}
+
+.back-home span i{
+  font-size:  20px;
+}
+.back-home:hover{
+  background-color:  rgba(0, 0, 0, 0.4);
+}

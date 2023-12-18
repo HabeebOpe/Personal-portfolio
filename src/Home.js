@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from "./asset/logo.png"
 
-const Home = (props) => {
+const Home = () => {
   return (
      <div class="container">
       <div class="blur-home">

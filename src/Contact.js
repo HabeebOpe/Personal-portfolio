@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 const Contact = (props) => {
   return (
@@ -9,12 +10,12 @@ const Contact = (props) => {
             <p>Let's work together, and I will help you by all my best.</p>
           </div>
           <div>
-            <button>Let's chat!</button>
+            <Link to="/form" ><button>Let's chat!</button></Link>
           </div>
         </div>
         <div class="connect2">
           <h4>Stay connected</h4>
-          <h3>Hello@habeebullah</h3>
+          <Link to="/form" ><h3>Hello@habeebullah</h3></Link>
           <p>Lagos, Nigeria</p>
           <h5><a href="tel:+2349158573159">(+234)91-5857-3159</a></h5>
         </div>

@@ -555,6 +555,7 @@ p {
   justify-content: center;
   background-color:  var(--primary-cl);
   position: relative;
+  padding: 15px;
 }
 .form-section form {
   max-width: 400px;
